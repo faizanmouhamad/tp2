@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html=lang="en">
-   <head>
-      <meta charset="UTF-8">
-   </head>
-   <body>
-      <form action="http://www.iut-fbleau.fr/sitebp/get.php" method="get">
-         <label for="mail">Mail</label>
-         <input type="text" id="mail" required>
-         <label for="ci">Sport</label>
-         <input type="checkbox" id="ci">
-         <label for="ci">Musique</label>
-         <input type="checkbox" id="ci">
-         <label for="ci">Lecture</label>
-         <input type="checkbox" id="ci">
-         <label for="ci">Cinéma</label>
-         <input type="checkbox" id="ci">
-         <label for="ci">Informatique</label>
-         <input type="checkbox" id="ci">
-         <input type="submit" name="soumission" value="envoyer" />
-        <input type="reset" name="soumission" value="reset" />
-     </form>
-   </body>
+<head>
+   <meta charset="UTF-8">
+</head>
+<body>
+   <form action="http://www.iut-fbleau.fr/sitebp/get.php" method ="get" enctype="application/x-www-form-urlencoded" >
+      <label for="mail">Mail :</label>
+      <input type="text" name="Email" id="mail" required> <br/>
+     
+      <label for="sport">Sport</label> 
+      <input type="checkbox" name="Sport" id="sport"> <br/>
+      <label for="musique">Musique</label>
+      <input type="checkbox" name="Musique" id="musique"> <br/>
+      <label for="lecture">Lecture</label>
+      <input type="checkbox" name="Lecture" id="lecture"> <br/>
+      <label for="cinema">Cinéma</label>
+      <input type="checkbox" name="Cinema" id="cinema"> <br/>
+      <label for="info">Informatique</label>
+      <input type="checkbox" name="Informatique" id="info"> <br/>
+      <input type="submit" name="sousmission" value="Envoyer" />
+      <input type="reset" />
+   </form>
+</body>
 </html>
 
