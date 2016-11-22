@@ -3,32 +3,37 @@
 <head>
    <meta charset="UTF-8">
 </head>
-  <body>
-    <form action="http://www.iut-fbleau.fr/sitebp/post.php" method="post">
+<body>
+   <form action="http://www.iut-fbleau.fr/sitebp/post.php" method="post" enctype="application/x-www-form-urlencoded">
       <label for="nom">Nom :</label>
       <input type="text" name="nom" id="nom" required> <br/>
       <label for="prenom">Prénom :</label>
       <input type="text" name="prenom" id="prenom" required> <br/>
       <label for="date">Date de naissance :</label>
       <input type="date" name="date" id="date" required> <br/>
-       <label for="mail">Email :</label>
+      <label for="mail">Email :</label>
       <input type="email" name="mail" id="mail" required> <br/>
-       <label for="number">Code postal :</label>
+      <label for="number">Code postal :</label>
       <input type="number" name="number" id="number" required> <br/>
       <label for="tel">Téléphone portable :</label>
       <input type="number" name="tel" id="tel" required> <br/>
       <label for="sex">Sexe :</label>
       <input type="radio" name="sex" id="sex" required> Homme 
       <input type="radio" name="sex" id="sex" required> Femme <br/>
-       <label for="sem">Semestre :</label>
+      <label for="sem">Semestre :</label>
       <select>
-        <option value="S1">S1</option>
-        <option value="S2">S2</option>
-        <option value="S3">S3</option>
-        <option value="S4">S4</option>
-      </select> <br/>
-       <label for="niv">Niveau en html :</label>
-      <input type="range" name="niv" id="niv" required> <br/>
-    </form>
-  </body>
+         <option value="S1">S1</option>
+         <option value="S2">S2</option>
+         <option value="S3">S3</option>
+         <option value="S4">S4</option>
+      </select>
+      <br/>
+      <label for="niv">Niveau en html :</label>
+      <input type="range" name="niv" id="niv" min="0" max="10" value="5" required> <br/>
+      <textarea rows="4" cols="50" name="comment" form="usrform"> </textarea>
+      <br/>
+      <input type="submit" name="sousmission" value="Envoyer" />
+      <input type="reset" />
+   </form>
+</body>
 </html>
